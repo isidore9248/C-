@@ -1,0 +1,54 @@
+1、	threadObj.join()		等待线程结束
+	threadObj.detach()		分离主线程和子线程
+	threadObj.joinable()	查看是否可以调用join或者detach
+		如果可以，再调用
+2、在创建的线程中传递参数时，直接传入局部变量thread函数会将它转换为右值
+	使用ref(val)将变量变为其引用传入
+3、互斥锁：
+	如果多个线程需要同时使用同一个变量(取地址)时，需要在写变量前对其加锁操作
+	使用mutex类型对象，
+	写之前：调用obj.lock()加锁，写之后：调用obj.unlock()解锁
+4、lock_guard:
+	模板类，用一个mutex对象创建一个lock_guard对象
+	类似智能指针，在构造函数里自动调用枷锁操作；析构函数里调用解锁操作
+	禁用了拷贝构造和拷贝赋值构造，只在局部作用域中起作用
+5、unique_lock:
+	模板类，用一个timed_mutex对象创建一个unique_lock对象
+	也会自动加锁和解锁，但如果在 构造中输入参数 defer_lock，需要手动加锁（方便调用延时加锁）
+	obj.try_lock_for(...)		如果获取不到锁，则等待一段时间，超时直接退出
+6、call_once:
+	在单例设计模式下，std中保证只创建一个实例的函数。
+	需要传递一个std::once_flag类的对象，和操作函数，或lambda表达式
+	其通过std::once_flag类对象保证后面的操作函数或lambda表达式只被调用一次
+7、条件变量：
+	std::condition_variable 需要配合unique_lock使用
+	消费者：在创建unique_lock对象后，创建一个该类对象
+			入队(push)之后，调用obj.notify_one()
+	生产者：与消费者使用同一个unique_lock对象，在出队之前调用obj.wait()函数
+			wait()第一个参数是	unique_lock对象
+				第二个参数是	true(不再等待并继续执行) false(继续等待)
+8、async,future:
+	调用格式：std::future<ret_type> val_name = std::async(std::launch::async, calobj);
+	执行上述语句后，会自动创建一个线程并执行，不需要手动创建
+	注：async 中的 calobj必须使用有返回值类型的，不可以使用void
+		async包装后会返回一个future对象，调用val_name.get()可以获取经过async包装后的可调用对象返回值
+9、packaged_task:
+	调用格式:	std::packaged_task<ret_type(param_type)> new_name(calobj);
+				auto future_result = new_name.get_future();	
+				std::thread t1(std::move(new_name));
+	new_name.get_future(); 得到一个future类对象。
+	仍然需要手动创建线程，使用std::move是因为线程不接受拷贝，需要移动
+10、promise：
+	通过promise对象的get_future(),获取future类对象,用于在另一个线程中获取promise对象产生的值。
+	调用格式：	std::promise<value_type> pobj_name;
+				std::future<value_type> future_result = pobj_name.get_future();
+				std::thread t1(Promise_func, std::ref(pobj_name), set_value);
+	需要创建线程并执行
+	Promise_func为可调用对象:
+		void Promise_func(std::promise<int>& f, int setvalue) { f.set_value(setvalue); }
+		使用引用因为线程不接受拷贝
+		在这里面通过set_value(setvalue)设置可以被另一个线程中读取
+11、原子操作 atomic：
+	对于多个线程的共享变量，可以使用std::atomic模板类对象，
+	调用格式：std::atomic<val_type> val_name;
+	就可以在一个线程中修改变量时，不使用mutex互斥锁，提高运行效率

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\src">
+      <UniqueIdentifier>{3269a447-bc76-44a5-b83e-2608ba08a754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\inc">
+      <UniqueIdentifier>{41a91881-8e64-4714-bef9-cc6465532e8a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="construct.cpp">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="initialize.cpp">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="MyConst.cpp">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="myinline.cpp">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="MyInterface.cpp">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="myswap.cpp">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Nameinher.cpp">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="NewedPtr.cpp">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="nonMemFri.cpp">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="pimpl.cpp">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Purevirtunc.cpp">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="repvirfunc.cpp">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="source.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="construct.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="copyoperator.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="destrerror.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="HeadFile.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="initialize.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="InterandImpleinher.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="MyConst.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="myinline.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="MyInterface.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="myswap.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Nameinher.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="NewedPtr.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nonMemFri.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="pimpl.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Purevirfunc.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="repvirfunc.h">
+      <Filter>源文件\inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="effective c++ note.txt">
+      <Filter>源文件</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
