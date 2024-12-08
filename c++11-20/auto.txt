@@ -1,0 +1,40 @@
+1、auto：自动类型推导
+	auto定义时必须写出变量的初始化值
+	如：auto z = 'a';       // z 是字符型 char
+2、当变量不是指针或者引用类型时
+	推导的结果中不会保留const、volatile关键字
+   当变量是指针或者引用类型时
+	推导的结果中会保留const、volatile关键字
+3、auto不被允许使用的地方：
+	A.作为函数形参:int func(auto a, auto b){}	// error
+
+	B.类非静态成员初始化：
+	class Test
+{
+    auto v1 = 0;                    // error
+    static auto v2 = 0;             // error,类的静态非常量成员不允许在类内部直接初始化
+    static const auto v3 = 10;      // ok
+}
+	v1，v2不可以由于这里的类是declaration，变量未创建
+	v3可以是因为	静态的const		需要提前知道变量的值
+
+	C.定义数组：
+	int array[] = {1,2,3,4,5};  // 定义数组
+    auto t2[] = array;          // error, auto无法定义数组
+    auto t3[] = {1,2,3,4,5};;   // error, auto无法定义数组
+	auto t1 = array;            // ok, t1被推导为 int* 类型
+	t1被看作指针，所以可以使用
+
+	D.使用模板时的参数：
+	template <typename T>
+	struct Test{}
+	int func()
+	{
+		Test<double> t;
+		Test<auto> t1 = t;         // error, 无法推导出模板类型
+		return 0;
+	}
+
+
+4、推荐使用auto：
+	A.容器遍历，将  容器类型<T> ::iterator	替换为auto
