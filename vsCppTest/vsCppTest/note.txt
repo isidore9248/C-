@@ -1,0 +1,30 @@
+1、类的awaitable，在需要使用协程的类中实现以下三个函数
+	1.1、await_ready:判断是否可以继续执行，返回true或false
+		- true:协程继续执行
+		- false:协程挂起，等待
+	1.2、await_suspend:暂停了以后需要做什么
+	1.3、await_resume:恢复协程时返回的结果
+		- 这个函数的返回值会传递给协程的co_await表达式，也就是co_await的返回值
+
+2、co_wait:让协程等待，如网络请求，文件读取等耗时操作
+
+3、在调用co_await的函数中，返回值必须为一个类，并且此类需要内嵌	class promise_type
+	实现以下函数：
+		1、构造函数
+		promise_type() {}
+		2、创建协程的返回值对象，即promise_type外的Task类对象
+		Task get_return_object()
+		{
+			return Task{ };	//根据Task的构造函数返回
+		}
+		3、std::suspend_never initial_suspend() { return {}; }
+		4、std::suspend_always final_suspend() noexcept { return {}; }
+		5、void unhandled_exception() {}
+		6、返回值类型函数，以下函数只能存在一个
+		a.	void return_void() {}
+		b.	void return_value(int value_)
+			{
+				*value = value_;
+			}
+
+4、协程函数中使用	co_return 进行返回

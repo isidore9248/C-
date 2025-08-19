@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\C(C\u002B\u002B)\\c\u002B\u002B\\vsCppTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D01920E-742A-431A-9F16-9C43BCFF3AC1}|vsCppTest\\vsCppTest.vcxproj|F:\\C(C\u002B\u002B)\\c\u002B\u002B\\vsCppTest\\vsCppTest\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4D01920E-742A-431A-9F16-9C43BCFF3AC1}|vsCppTest\\vsCppTest.vcxproj|solutionrelative:vsCppTest\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D01920E-742A-431A-9F16-9C43BCFF3AC1}|vsCppTest\\vsCppTest.vcxproj|F:\\C(C\u002B\u002B)\\c\u002B\u002B\\vsCppTest\\vsCppTest\\note.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4D01920E-742A-431A-9F16-9C43BCFF3AC1}|vsCppTest\\vsCppTest.vcxproj|solutionrelative:vsCppTest\\note.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D01920E-742A-431A-9F16-9C43BCFF3AC1}|vsCppTest\\vsCppTest.vcxproj|F:\\C(C\u002B\u002B)\\c\u002B\u002B\\vsCppTest\\vsCppTest\\new_c.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4D01920E-742A-431A-9F16-9C43BCFF3AC1}|vsCppTest\\vsCppTest.vcxproj|solutionrelative:vsCppTest\\new_c.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D01920E-742A-431A-9F16-9C43BCFF3AC1}|vsCppTest\\vsCppTest.vcxproj|F:\\C(C\u002B\u002B)\\c\u002B\u002B\\vsCppTest\\vsCppTest\\new_c.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4D01920E-742A-431A-9F16-9C43BCFF3AC1}|vsCppTest\\vsCppTest.vcxproj|solutionrelative:vsCppTest\\new_c.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1a46fd64-28d5-0019-8eb3-17a02d419b53}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{de1fc918-f32e-4dd7-a915-1792a051f26b}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "note.txt",
+              "DocumentMoniker": "F:\\C(C\u002B\u002B)\\c\u002B\u002B\\vsCppTest\\vsCppTest\\note.txt",
+              "RelativeDocumentMoniker": "vsCppTest\\note.txt",
+              "ToolTip": "F:\\C(C\u002B\u002B)\\c\u002B\u002B\\vsCppTest\\vsCppTest\\note.txt",
+              "RelativeToolTip": "vsCppTest\\note.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-05-18T03:16:30.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "new_c.c",
+              "DocumentMoniker": "F:\\C(C\u002B\u002B)\\c\u002B\u002B\\vsCppTest\\vsCppTest\\new_c.c",
+              "RelativeDocumentMoniker": "vsCppTest\\new_c.c",
+              "ToolTip": "F:\\C(C\u002B\u002B)\\c\u002B\u002B\\vsCppTest\\vsCppTest\\new_c.c",
+              "RelativeToolTip": "vsCppTest\\new_c.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-02-19T07:23:36.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "new_c.h",
+              "DocumentMoniker": "F:\\C(C\u002B\u002B)\\c\u002B\u002B\\vsCppTest\\vsCppTest\\new_c.h",
+              "RelativeDocumentMoniker": "vsCppTest\\new_c.h",
+              "ToolTip": "F:\\C(C\u002B\u002B)\\c\u002B\u002B\\vsCppTest\\vsCppTest\\new_c.h",
+              "RelativeToolTip": "vsCppTest\\new_c.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-19T07:23:31.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "F:\\C(C\u002B\u002B)\\c\u002B\u002B\\vsCppTest\\vsCppTest\\main.cpp",
+              "RelativeDocumentMoniker": "vsCppTest\\main.cpp",
+              "ToolTip": "F:\\C(C\u002B\u002B)\\c\u002B\u002B\\vsCppTest\\vsCppTest\\main.cpp*",
+              "RelativeToolTip": "vsCppTest\\main.cpp*",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-15T15:50:35.016Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

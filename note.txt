@@ -1,0 +1,12 @@
+1、构造一个类，必须要写	
+	a.	default constructor	默认构造函数
+	b.	virtual destructior	虚函数析构函数
+	c.	copy constructor	拷贝构造函数		一定要手动赋值
+2、减少对默认参数的使用
+3、c++中尽量使用string ，而不是char*
+4、尽量不要使用自动类型转换函数（运算符重载），如果使用尽量使用explicit，不会自动隐含被调用
+5、不建议使用多继承
+6、不建议将auto和new结合使用，例如 auto I = new auto(5) ;
+7、	a.减少使用mutable，多使用const。
+	b.当const与non-const有实质性等价实现时，用non-const版本调用const版本，避免代码重复
+8、
